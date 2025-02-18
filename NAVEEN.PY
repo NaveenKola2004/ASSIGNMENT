@@ -4,8 +4,7 @@ Name=input("Enter your name  : ")
 Age=int(input("Enter your age : "))
 cal=(100-Age)
 year=2025+cal
-print(f"{Name} is turn 100 in {year}")
-
+print(Name,"is turn 100 in ",year)
 
 #2. Swap Two Numbers Using Arithmetic Operations
 
