@@ -10,9 +10,7 @@ print(Name,"is turn 100 in ",year)
 
 num1=float(input("Enter the number : "))
 num2=float(input("Enter the number : "))
-temp=num1
-num1=num2
-num2=temp
+num1,num2=num2,num1
 print("num1 : ",num1,"   num2 : ",num2)
 
 #3. Perform All Arithmetic Operations
