@@ -48,7 +48,18 @@ print(simple_intreat)
 
 #7. Find Sum of Digits of a 3-Digit Number
 
-
+num=123
+last=num%10
+rem=num//10
+a=last
+last2=rem%10
+rem2=rem//10
+b=last2
+last3=rem2%10
+rem3=rem2//10
+c=last3
+print(a+b+c)
+print(a*b*c)
 #8. Reverse a 3-Digit Number
 
 num=int(input("Enter the number : "))
