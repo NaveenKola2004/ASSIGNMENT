@@ -63,9 +63,18 @@ print(a*b*c)
 #8. Reverse a 3-Digit Number
 
 num=int(input())
-convert=str(num)
-reverse=convert[::-1]
-print(reverse)
+last=num%10
+a=last
+rem=num//10
+last=rem%10
+b=last
+rem=rem//10
+last=rem%10
+c=last
+rem=rem//10
+print(a,b,c)
+print(a*100+b*10+c*1)
+
 
 
 #9. Convert Total Minutes to Hours and Minutes
