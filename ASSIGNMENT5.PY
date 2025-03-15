@@ -133,8 +133,8 @@ largest=max(L)
 L.sort()
 result= [
     X in L and X is largest,
-    X not in L or X > L[0] and X > L[1] and X > L[2] and X > L[3],
-    (L[0] == L[1]) or (L[0] == L[2]) or (L[0] == L[3]) or (L[1] ==L[2]) or (L[1]==L[3]) or (L[2] ==L[3]) # we are checking minimum elements in list
+    X not in L and X>max(L),
+    
 ]
 print(result)
 
@@ -145,7 +145,7 @@ sub="car"
 re=sub[::-1]
 result= [
     sub in s,
-    sub in s,
+    sub in re,
     s.startswith(sub) and s.endswith(sub)
 ]
 print(result)

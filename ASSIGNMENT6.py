@@ -48,7 +48,7 @@ installed_apps=["whatsapp","facebook","instagram"]
 required_app1="whatsapp"
 required_app2="instagram"
 
-checking=required_app1 in installed_apps or required_app2 in installed_apps
+checking=required_app1 in installed_apps and required_app2 in installed_apps
  
 print(checking)
 
