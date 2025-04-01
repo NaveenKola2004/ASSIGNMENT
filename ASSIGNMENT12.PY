@@ -33,4 +33,26 @@ sen=input("Enter the sentence : ")
 for i in sen.split():
     print(i[::-1],end=" ")
 
-# 
+# 6. Check if a Number is a Palindrome
+
+word=input("Entere the word to check palindrome or not : ")
+
+for i in word.split():
+    if i==word[::-1]:
+        print("Palindrome")
+    else:
+        print("Not a Palindrome")
+#   7. Count Consecutive Ones in a Binary String
+
+# 8. Print a Right-Angled Triangle Pattern with Odd Numbers
+n=1
+row =int(input("Enter the number of rows : "))
+
+for i in range(1,row+1):
+    for j in range(i):
+        print(n,end=" ")
+        n+=2
+    print()
+
+#   9. Find the Most Frequent Number in a List
+# 10. Print Numbers with Distinct Digits
