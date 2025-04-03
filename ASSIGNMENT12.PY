@@ -10,6 +10,21 @@ for i in num:
     repeat.add(i)
 
 # 2. Find the First Non-Repeating Character in a String
+valu="swiss"
+unq=set()
+rep=set()
+
+for i in valu:
+    if i in rep:
+        unq.add(i)
+    else:
+        rep.add(i)
+for j in valu:
+    if j not in unq:
+        print(j)
+        break
+else:
+    print("no repeting value")
 # 3. Find the Largest Odd Number in a List
 numbers = [10, 34,  12]
 
