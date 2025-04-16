@@ -125,3 +125,23 @@ def GCD(a,b):
             b=b-a
     return a
 print(GCD(20,8))
+
+# Extra quesion linear search
+
+def check(target,a):
+    i=0
+    while i<len(a):
+        values=(a[i])
+        if(values==target):
+            print(a.index(values))
+            print("Yes")
+            break
+        i=i+1
+b=[]
+n=int(input("Enter the number elements to add : "))
+for i in range(n):
+    target=int(input("Enter the number : "))
+    b.append(target)
+print(b)
+target=int(input("Enter the number : "))
+check(target,b)
