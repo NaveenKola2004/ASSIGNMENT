@@ -145,3 +145,31 @@ for i in range(n):
 print(b)
 target=int(input("Enter the number : "))
 check(target,b)
+
+
+# BINARY SEARCH
+
+def Binary_search(Numbers,Find):
+    Lower=0
+    Upper=len(Numbers)-1
+    while Lower<=Upper:
+        Mid=(Lower+Upper)//2
+        if(Numbers[Mid]==Find):
+            print("YES")
+            break
+        else:
+            if(Numbers[Mid]<Find):
+                Lower=Mid+1
+            else:
+                Upper=Mid-1
+    else:
+        print("NO")
+
+Number=[]
+n=int(input("Enter the number of Elements to insert : "))
+for i in range(n):
+    Value=int(input(f"Enter the Number {i} : "))
+    Number.append(Value)
+Find=int(input("Enter the number to find : "))
+Number.sort()
+Binary_search(Number,Find)
