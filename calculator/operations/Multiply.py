@@ -1,0 +1,8 @@
+def Multiplication_Numbers(a,b):
+    if a==0 or b==0:
+        if a==0:
+            print("Please change the value of 'a' you entered ' 0 ' so it return '0' ")
+        else:
+            print("Please change the value of 'b' you entered ' 0 ' so it retun '0' ")
+        return None
+    print(f"{a} X {b} = {a*b}")
