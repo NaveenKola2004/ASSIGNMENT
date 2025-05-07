@@ -39,6 +39,15 @@ print(total_bill(bill_amount,tip_amount))
 
 # Problem 6: Remove Vowels
 
+def Remove_vowels(word):
+    con=""
+    for i in word:
+        if i not in ['a','e','i','o','u']:
+            con=con+i
+    return con
+word=input("Enter the word : ")
+print(Remove_vowels(word))
+
 # Problem 7: Is Even
 def Is_Even(n):
     if n%2==0:
