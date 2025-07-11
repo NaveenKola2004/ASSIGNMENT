@@ -109,7 +109,7 @@ z=15
 result=[
     x>y and x>z,
     y<x and y<z,
-    (x is not y) and  (x is not z) and (y is not z)
+    (x is not y) and  (x is not z) and (y is not z) # distinct each and every thing is unique
 ]
 print(result)
 

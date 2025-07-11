@@ -74,9 +74,9 @@ user_a_phone = ("iPhone 12", 2020)
 user_b_phone = ("iPhone 14", 2022)  
 
 result=(
-    2022<2020,
-    2022>2020,
-    user_a_phone==user_b_phone
+user_a_phone[1]>user_b_phone[1],
+user_b_phone[1]>user_a_phone[1],
+user_a_phone[0]==user_b_phone[0]
 )
 print(result)
 
