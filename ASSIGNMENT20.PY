@@ -39,3 +39,21 @@ print(Peak_Finder([1,3,2,5,3,9,8]))
 #  Running Sum with Threshold
 
 
+
+def largestsec(n):
+    l=[]
+    for i in range(n):
+        d=int(input())
+        l.append(d)
+    for i in range(n):
+        for j in range(n-1-i):
+            if(l[j]>l[j+1]):
+                l[j],l[j+1]=l[j+1],l[j]
+    if(n>=2):
+        if(l[n-1]==l[n-2]):
+            return (l[n-3])
+        else:
+            return (l[n-2])
+n=int(input())
+print(largestsec(n))
+

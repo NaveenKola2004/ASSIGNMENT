@@ -48,7 +48,7 @@ print(simple_intreat)
 
 #7. Find Sum of Digits of a 3-Digit Number
 
-num=123
+num=230
 last=num%10
 rem=num//10
 a=last
